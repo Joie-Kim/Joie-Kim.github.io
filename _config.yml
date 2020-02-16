@@ -16,9 +16,11 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://koppl.in/indigo
+url: https://Joie-Kim.github.io
+baseurl : " "
 # your url: http://USERNAME.github.io
 
+remote_theme : sergiokopplin/indigo
 permalink: /:title/
 
 # To enable google analytics, supply your token below
