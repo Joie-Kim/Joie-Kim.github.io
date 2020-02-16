@@ -53,18 +53,12 @@ disqus:
 email: joie.huiju@gmail.com
 
 authors:
-    johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+    Joie-Kim:
+        name: Joie-Kim
+        bio: study hard ~~! :)
         external-image: false
-        picture: assets/images/profile.jpg
-        twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
+        picture: assets/images/profileJoy.png
+    
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -120,8 +114,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-admin
-  - jekyll-paginate-v2
 
 jekyll-mentions:
     base_url: https://github.com
