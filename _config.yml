@@ -22,7 +22,7 @@ url: https://joie-kim.github.io
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+# analytics-google: 'UA-169188057-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
@@ -34,7 +34,7 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-# facebook: myfacebook
+facebook: "huijoo5575?ref=bookmarks"
 # twitter: mytwitter
 # instagram: myinstagram
 # pinterest: mypinterest
@@ -74,7 +74,7 @@ pagination:
     permalink: "/:num/" # pagination link that will be appended
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+projects: false
 
 # if you don't need "about" or "blog", comment them out below
 about: true
