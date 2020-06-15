@@ -85,8 +85,8 @@ description: Markdown summary with different options
 
 여기서 말하는 '앱 제목'은 앱스토어에 우리 서비스를 등록할 때, 함께 등록하는 이름이다. 아래 이미지에서 네모칸 안에 들어가 있는 부분이라 생각하면 된다.
 
-![Title Sample](/assets/ASO/ASO-예시1-카카오택시.png)
-![Title Sample](/assets/ASO/ASO-예시2-당근마켓.png)
+![Title Sample](/assets/ASO/ASO-Sample-1.png)
+![Title Sample](/assets/ASO/ASO-Sample-2.png)
 
 앱 제목은 사용자에게 직접적으로 보여지기 때문에 중요하고, 검색 알고리즙에 영향을 주기 때문에(높은 우선순위로 반영이 된다.) 주요 키워드들을 포함 해야 한다.
 > 즉, 앱 제목에 달랑 서비스 이름만 넣지 말고, **서비스에 대한 키워드**를 포함하자!!
@@ -95,13 +95,13 @@ description: Markdown summary with different options
 비교 해보기 위해 비슷한 성격의 상대적으로 잘 알려진 서비스와 그렇지 않은 서비스를 가져와봤다.
 
 ↓ '톡'이라고 검색했을 때, 나온 서비스 비교! 앱 제목을 비교해보면 차이가 있다.
-![Title Sample](/assets/ASO/ASO-예시3-카카오톡.png)
-![Title Sample](/assets/ASO/ASO-예시6-다톡.png)
+![Title Sample](/assets/ASO/ASO-Sample-3.png)
+![Title Sample](/assets/ASO/ASO-Sample-4.png)
 
 ↓ '음식 배달'이라고 검색했을 때, 나온 서비스 비교!
 상대적으로 덜 유명한 '쿠팡이츠'의 앱 제목에는 키워드가 있다.
-![Title Sample](/assets/ASO/ASO-예시4-배달의민족.png)
-![Title Sample](/assets/ASO/ASO-예시5-쿠팡이츠.png)
+![Title Sample](/assets/ASO/ASO-Sample-5.png)
+![Title Sample](/assets/ASO/ASO-Sample-6.png)
 
 예를 들어보자.
 
