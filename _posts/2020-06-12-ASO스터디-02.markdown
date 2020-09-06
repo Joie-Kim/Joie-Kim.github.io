@@ -1,29 +1,44 @@
 ---
 title: "ASO 스터디 (2)"
 layout: post
-date: 2020-06-13 13:00
+date: 2020-06-20 20:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
 - Study
 - User Research
 - ASO
-hidden : true
 star: false
 category: blog
 author: Joie-Kim
 description: Markdown summary with different options
 ---
 
-앱스토어에서 인싸가 되기 위해 ASO에 대해 공부 했다. 언젠가 내가 만든 서비스가 많은 사람들의 눈에 띄길 바라며..🙏
+1편에서는 ASO가 무엇인지, 사용자의 검색 결과에 노출 시키는 방법, 검색 결과 상위에 노출 되는 방법에 대한 내용을 다뤘다. 이번에는 그렇게 우리 앱을 발견한 사용자들이 설치할 수 있도록 **앱 상세 페이지**를 매력적으로 만드는 방법에 대해 알아보자. 👀
 
 ---
 
-## 2. 다운로드 받고 싶게 만들기 (aka. 앱 소개 페이지 리뉴얼)
+# 어떻게 하면 설치 하고 싶어질까..
 
-앱 소개 페이지 : 스토어에서 앱을 선택했을 때 보이는 화면 (말 그대로 앱 소개 페이지)
+## 2-1. 앱 상세 페이지는 무엇인가?
 
-앞으로 할 이야기는 아래 아티클을 참고 했으며, 다음과 같은 조건을 따른다.
+앱 상세 페이지는 스토어에서 앱을 선택했을 때 보이는 화면을 말한다. 구글 플레이(Android), 앱 스토어(iOS)에서 차이점을 가지고 있지만, 큰 형식은 비슷하다.
+
+![AppPage](/assets/ASO/ASO-AppPage.png)
+<figcaption class="caption">앱 상세 페이지 구조</figcaption>
+
+하나하나 어떤 특징이 있는지 알아야 한다.
+* 앱 아이콘(Icon) : 
+* 앱 제목(Title) :
+* 스크린샷(Screen Shot) :
+* 설명(Description) :
+   * 짧은 설명(Short Description) :
+   * 긴 설명(Full Description) :
+* 평점 및 리뷰(Rating & Reviews) :
+
+## 2-2. 매력적인 앱 상세 페이지의 필수 조건!
+
+앞으로 할 이야기는 이 아티클을 참고 했으며, ㄹ다음과 같은 조건을 따른다.
 
 - 5개의 애플리케이션 데이터
 - 3개의 다른 A/B 테스트 도구
