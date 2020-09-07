@@ -1,6 +1,6 @@
 # main text of home
 name: Joie-Kim
-bio: study hard study hard study hard study hard
+bio: 배운 것을 기록하는 습관! ✍️
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -55,7 +55,7 @@ email: joie.huiju@gmail.com
 authors:
     Joie-Kim:
         name: Joie-Kim
-        bio: study hard study hard study hard study hard
+        bio: 배운 것을 기록하는 습관! ✍️
         external-image: false
         picture: assets/images/profileJoy.png
     
