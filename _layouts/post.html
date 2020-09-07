@@ -23,6 +23,7 @@ layout: page
 
 {{content}}
 
+<!---
 {% if site.post-advance-links contains page.category %}
     <div class="blog-navigation">
         {% if page.previous.hidden == false and page.previous.url %}
@@ -34,7 +35,7 @@ layout: page
             <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
         {% endif %}
     </div>
-{% endif %}
+{% endif %} -->
 
 {% if site.related %}
     {% include related.html %}
