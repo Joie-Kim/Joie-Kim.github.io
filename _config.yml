@@ -1,6 +1,6 @@
 # main text of home
 name: Joie-Kim
-bio: study hard ~~! :)
+bio: study hard study hard study hard study hard
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -31,17 +31,17 @@ analytics-google: 'UA-169188057-1'
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [blog] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: "huijoo5575?ref=bookmarks"
+# facebook: "huijoo5575?ref=bookmarks"
 # twitter: mytwitter
 # instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-# github: mygithub
+github: Joie-Kim
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
@@ -55,7 +55,7 @@ email: joie.huiju@gmail.com
 authors:
     Joie-Kim:
         name: Joie-Kim
-        bio: study hard ~~! :)
+        bio: study hard study hard study hard study hard
         external-image: false
         picture: assets/images/profileJoy.png
     
