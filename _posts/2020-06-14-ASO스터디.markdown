@@ -4,11 +4,7 @@ layout: post
 date: 2020-06-14 15:00
 image: /assets/images/markdown.jpg
 headerImage: false
-tag:
-- Study
-- User Research
-- ASO
-hidden : false
+hidden : true
 star: false
 category: blog
 author: Joie-Kim
