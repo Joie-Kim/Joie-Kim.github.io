@@ -33,7 +33,7 @@ JavaScript 엔진과 JavaScript 런타임.. 비슷하게 생겨서(?) 헷갈렸�
 > -**BOM** (Browser Object Model, 브라우저 객체 모델)<br>
 -**DOM** (Document Object Model, 문서 객체 모델)
 
-<br>
+---
 
 ## 정리하자면..
 전통적인 컴파일드 언어와 비교했을 때,
@@ -43,10 +43,9 @@ JavaScript 엔진과 JavaScript 런타임.. 비슷하게 생겨서(?) 헷갈렸�
 > -**Linker(링커)** : 컴파일러가 만들어낸 하나 이상의 목적 파일을 가져와 이를 단일 실행 프로그램으로 병합하는 프로그램.<br>
 -**목적 파일** : 컴파일러나 어셈블러가 소스 코드 파일을 컴파일 또는 어셈블 해서 생성하는 파일. 기계어나 혹은 이에 준하는 RTL과 같은 이진 코드로 이루어져 있다.
 
-<br>
 ---
 
-### 참고
+### 📚 참고
 
 [https://geonlee.tistory.com/91](https://geonlee.tistory.com/91)<br>
 [http://tcpschool.com/javascript/js_bom_window](http://tcpschool.com/javascript/js_bom_window)<br>
