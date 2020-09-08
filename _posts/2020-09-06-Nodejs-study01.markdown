@@ -41,7 +41,7 @@ description: Markdown summary with different options
 Node.js 구조는 아래와 같다.(~~강의 자료에 나와있는 내용을 정리해서 그렸다.~~)<br>
 V8 엔진 위에서 동작한다는 걸 알 수 있다.
 
-![AppPage](/assets/200906/architecture.jpeg)
+![image](/assets/200906/architecture.jpeg)
 
 ---
 
@@ -50,7 +50,7 @@ V8 엔진 위에서 동작한다는 걸 알 수 있다.
 
 **(1) 비동기 방식 → Non-Blocking IO**<br>: 하나의 요청 처리가 끝날 때까지 기다리지 않고, 다른 요청을 동시에 처리한다.
 
-![AppPage](/assets/200906/non-blocking.jpeg)
+![image](/assets/200906/non-blocking.jpeg)
 
 비동기식(Non-Blocking) 방식은 파일 내용을 읽은 후 콜백 함수로 반환한다.<br>파일 읽기가 시작되면 즉시 다음 실행 순서로 넘어간다.
   
@@ -66,7 +66,7 @@ var result = doAdd(10,10);
 
 cf) 동기 방식 → Blocking IO<br>: 파일 내용을 다 읽고 난 후에 다른 일을 처리한다.
 
-![AppPage](/assets/200906/blocking.jpeg)
+![image](/assets/200906/blocking.jpeg)
 
 동기(Blocking) 방식은 파일의 내용을 읽어 함수의 결과값으로 반환한다.<br>결과값이 반환될 때까지 대기한다.
 
@@ -83,7 +83,7 @@ var result = doAdd(10,10);
 
 **(2) 이벤트 기반 방식 → Event Driven IO**<br>: 콜백 함수는 이벤트를 받았을 때 실행 된다.
 
-![AppPage](/assets/200906/event-driven.jpeg)
+![image](/assets/200906/event-driven.jpeg)
 
 ### 2. 빠른 속도
 
