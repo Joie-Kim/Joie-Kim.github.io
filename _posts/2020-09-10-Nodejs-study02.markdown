@@ -9,7 +9,7 @@ hidden : false
 star: false
 category: blog
 author: Joie-Kim
-description: Markdown summary with different options
+description: 배운 것을 기록하는 습관! ✍️
 ---
 <p>
 이전 Node.js와 친해지기 글에서 잠깐 언급 했었던 Node.js의 특징 중 하나인 이벤트 기반 비동기 방식에 대해 정리해 보려 한다.<br>

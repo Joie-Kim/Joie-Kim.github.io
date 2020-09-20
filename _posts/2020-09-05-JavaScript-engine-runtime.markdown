@@ -6,12 +6,11 @@ image: /assets/200905/v8-logo.png
 headerImage: true
 tag:
 - 용어_정리
-- JavaScript
 hidden : false
 star: false
 category: blog
 author: Joie-Kim
-description: Markdown summary with different options
+description: 배운 것을 기록하는 습관! ✍️
 ---
 
 JavaScript 엔진과 JavaScript 런타임.. 비슷하게 생겨서(?) 헷갈렸다..🤯<br>
