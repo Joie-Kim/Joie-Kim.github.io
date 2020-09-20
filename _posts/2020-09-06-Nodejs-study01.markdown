@@ -7,12 +7,11 @@ headerImage: true
 tag:
 - Node.js
 - Server
-- JavaScript
 hidden : false
 star: true
 category: blog
 author: Joie-Kim
-description: Markdown summary with different options
+description: 배운 것을 기록하는 습관! ✍️
 ---
 <p>
 서버 공부를 Node.js로 시작하기로 했다.<br>
