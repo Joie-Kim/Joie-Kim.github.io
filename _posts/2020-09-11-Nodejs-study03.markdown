@@ -9,7 +9,7 @@ hidden : false
 star: false
 category: blog
 author: Joie-Kim
-description: Markdown summary with different options
+description: 배운 것을 기록하는 습관! ✍️
 ---
 <p>
 Node.js에서 사용하는 내장 모듈 중 하나인 <b>Crypto 모듈</b>에 대해 공부 하다가<br>
