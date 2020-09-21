@@ -12,8 +12,11 @@ author: Joie-Kim
 description: 배운 것을 기록하는 습관! ✍️
 ---
 <p>
-<b>Express 모듈 시리즈 🐤</b><br>
-body-parser 미들웨어 모듈에 대해 알아보자.<br>
+<b>Express 시리즈 🐤</b><br>
+Express는 Node.js를 위한 빠르고 간편한 <u>웹 프레임워크</u>다.<br>
+Node.js의 핵심 모듈인 http와 Connect 컴포넌트를 기반으로 하며, 이런 컴포넌트를 미들웨어(Middleware)라고 한다.<br>
+<br>
+Express의 <u>body-parser 미들웨어 모듈</u>에 대해 알아보자.<br>
 (공식 문서와 구글링을 하며 이해한 내용을 정리했다.)
 </p>
 ---

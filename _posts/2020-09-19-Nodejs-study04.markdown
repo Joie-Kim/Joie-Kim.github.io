@@ -12,15 +12,18 @@ author: Joie-Kim
 description: 배운 것을 기록하는 습관! ✍️
 ---
 <p>
-<b>Express 모듈 시리즈 🐤</b><br>
-express.static 미들웨어 함수를 언제 어떻게 사용해야 하는지 알아보자.<br>
+<b>Express 시리즈 🐤</b><br>
+Express는 Node.js를 위한 빠르고 간편한 <u>웹 프레임워크</u>다.<br>
+Node.js의 핵심 모듈인 http와 Connect 컴포넌트를 기반으로 하며, 이런 컴포넌트를 미들웨어(Middleware)라고 한다.<br>
+<br>
+Express의 <u>express.static 미들웨어 함수</u>를 언제 어떻게 사용해야 하는지 알아보자.<br>
 (공식 문서 내용을 보며 이해한 내용을 기록 했다.)
 </p>
 ---
 
 ## express.static?
 
-Express 모듈의 기본 제공 미들웨어 함수이며,<br>
+Express의 기본 제공 미들웨어 함수이며,<br>
 이미지, CSS 파일 및 JavaScript 파일과 같은 정적 자산(asste)을 제공하기 위해 사용한다.
 
 <u><b>미들웨어 함수란?</b></u>
