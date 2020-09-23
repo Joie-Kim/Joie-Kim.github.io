@@ -3,8 +3,7 @@ title: "이벤트 기반 비동기 방식 (Event Driven Non-blocking)"
 layout: post
 date: 2020-09-10 19:00
 tag:
-- Node.js
-- Server
+- 용어_정리
 hidden : false
 star: false
 category: blog

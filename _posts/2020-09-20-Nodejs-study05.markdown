@@ -33,7 +33,7 @@ parsing(파싱)은 컴퓨터 언어 분석에 사용되며, 컴파일러 및 인
 ## body-parser?
 
 클라이언트에서 post 또는 put 메소드로 body를 포함해 요청할 수 있다.<br>
-[http 요청 메서드 공식 문서](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods)를 확인 해보면, post와 put은 요청에 body(본문)가 존재한다고 되어 있다.
+[http 요청 메서드 관련 문서](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods)를 확인 해보면, post와 put은 요청에 body(본문)가 존재한다고 되어 있다.
 
 요청 받은 body를 서버에서 그대로 사용할 수 없기 때문에 서버에서 해석 가능한 형태로 변환해야 한다. 즉, <b>parsing</b>을 해야 한다.
 
