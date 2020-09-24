@@ -4,6 +4,7 @@ layout: post
 date: 2020-09-24 18:00
 tag:
 - 용어_정리
+- HTTP
 hidden : false
 star: false
 category: blog
