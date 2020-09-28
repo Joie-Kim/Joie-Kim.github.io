@@ -44,20 +44,21 @@ Idempotent?
 
 ## 종류
 
-![image](/assets/200924/HTTP-Method.png)
-
 - **GET**<br>
-목적 리소스의 현재 표시를 전송
+요청 받은 URI의 정보를 검색하여 응답
 
 - **HEAD**<br>
-GET 메소드의 요청과 동일한 응답을 요구하지만, 오직 Status Line과 Header 영역 만을 전송 (즉, 응답 본문은 포함하지 않음)
+GET 방식과 동일하지만, 오직 Status Code(응답 코드)와 Header 영역만을 전송 (즉, 응답 본문은 포함하지 않음)
 
 - **POST**<br>
-요청 payload에 대한 리소스 별 처리 수행
+요청 payload에 대한 리소스 별 처리 수행 (보통 INSERT 개념으로 사용)
 > payload : 전송되는 데이터를 의미
 
 - **PUT**<br>
-목적 리소스의 모든 현재 표시를 요청 payload로 변경
+목적 리소스의 모든 현재 표시를 요청 payload로 변경 (UPDATE 개념으로 사용)
+
+- **PATCH**<br>
+PUT과 사용 목적이 유사하지만, 일부를 변경
 
 - **DELETE**<br>
 목적 리소스의 모든 현재 표시를 삭제
@@ -66,7 +67,8 @@ GET 메소드의 요청과 동일한 응답을 요구하지만, 오직 Status Li
 목적 리소스로 식별되는 서버로의 터널을 맺음
 
 - **OPTIONS**<br>
-목적 리소스의 통신 옵션을 설명(설정)
+목적 리소스의 통신 옵션을 설명<br>
+웹 서버에서 지원되는 메소드의 종류를 확인할 경우 사용
 
 - **TRACE**<br>
 목적 리소스의 경로를 따라 메시지 look-back 테스트 수행
@@ -78,3 +80,4 @@ GET 메소드의 요청과 동일한 응답을 요구하지만, 오직 Status Li
 [https://tools.ietf.org/html/rfc7231#section-4.2.1](https://tools.ietf.org/html/rfc7231#section-4.2.1)
 [https://developer.mozilla.org/ko/docs/Web/HTTP/Methods](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods)
 [https://hongsii.github.io/2017/08/02/what-is-the-difference-get-and-post/#disqus_thread](https://hongsii.github.io/2017/08/02/what-is-the-difference-get-and-post/#disqus_thread)
+[https://javaplant.tistory.com/18](https://javaplant.tistory.com/18)
