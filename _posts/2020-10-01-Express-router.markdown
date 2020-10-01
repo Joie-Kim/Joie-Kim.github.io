@@ -13,6 +13,16 @@ author: Joie-Kim
 description: 배운 것을 기록하는 습관! ✍️
 ---
 
+<p>
+<b>Express 시리즈 🐤</b><br>
+Express는 Node.js를 위한 빠르고 간편한 <u>웹 프레임워크</u>다.<br>
+Node.js의 핵심 모듈인 http와 Connect 컴포넌트를 기반으로 하며, 이런 컴포넌트를 미들웨어(Middleware)라고 한다.<br>
+<br>
+Express에서 제공하는 <u>router</u>에 대해 알아보자.
+</p>
+
+---
+
 ## Routing?
 
 ### 정의
