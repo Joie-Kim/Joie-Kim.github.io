@@ -1,5 +1,5 @@
 ---
-title: "GET, POST, PUT, PATCH 비교 분석!"
+title: "GET, POST, PUT, PATCH 비교"
 layout: post
 date: 2020-09-30 22:00
 tag:
