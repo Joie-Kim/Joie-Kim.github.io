@@ -1,7 +1,7 @@
 ---
 title: "ES6의 const와 let"
 layout: post
-date: 2020-12-11 23:00
+date: 2020-12-11 22:00
 tag:
 - 용어_정리
 - JS
@@ -52,6 +52,7 @@ function let_example() {
 }
 let_example();
 ```
+let과 const는 scope가 함수 단위가 아닌 블록 단위이므로, if문 밖에서 선언한 a 값과 if문 안에서 선언한 a 값이 각각 처리 된다.
 
 <br>
 
@@ -59,7 +60,6 @@ let_example();
 let a = 1;
 let a = 2;  // Uncaught SyntaxError: Identifier 'a' has already been declared.
 ```
-let과 const는 scope가 함수 단위가 아닌 블록 단위이므로, if문 밖에서 선언한 a 값과 if문 안에서 선언한 a 값이 각각 처리 된다.<br>
 let과 const를 사용할 때, 블록 내부에서는 중복 선언이 불가능하다는 점에 주의해야 한다.
 
 <br>
