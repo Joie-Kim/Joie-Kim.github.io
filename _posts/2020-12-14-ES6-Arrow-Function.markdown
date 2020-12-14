@@ -28,7 +28,9 @@ setTimeout(() => {
 }, 1000);
 ```
 
+<br>
 <hr>
+<br>
 
 화살표 함수 문법과 기존 function과의 가장 큰 차이점은 서로 가리키고 있는 `this`의 값이 다르다는 것이다.<br>
 아래 코드로 이해해 보자.
@@ -69,8 +71,6 @@ const dog = new Dog();
 dog.bark(); // white dog: bowwow!!
 ```
 
-<br>
-
 화살표 함수는 자신이 종속된 인스턴스를 가리킨다.<br>
 여기서는 WhiteDog()로 생성된 whiteDog 인스턴스가 this가 된다.
 
@@ -89,7 +89,9 @@ const dog = new Dog();
 dog.bark(); // white dog: bowwow!!
 ```
 
+<br>
 <hr>
+<br>
 
 또한, 화살표 함수는 값을 연산하여 바로 반환해야 할 때 사용하면 가독성을 높일 수 있다.
 
