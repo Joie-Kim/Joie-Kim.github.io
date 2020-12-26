@@ -70,7 +70,7 @@ dog.bark(); // white dog: bowwow!!
 ```
 
 화살표 함수는 자신이 종속된 인스턴스를 가리킨다.<br>
-여기서는 WhiteDog()로 생성된 whiteDog 인스턴스가 this가 된다.
+여기서는 Dog()로 생성된 Dog 인스턴스가 this가 된다.
 
 ```jsx
 fucntion Dog() {
