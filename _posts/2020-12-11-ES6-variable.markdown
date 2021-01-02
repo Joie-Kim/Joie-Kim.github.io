@@ -3,7 +3,6 @@ title: "ES6의 const와 let"
 layout: post
 date: 2020-12-11 22:00
 tag:
-- 용어_정리
 - JS
 hidden : false
 star: false

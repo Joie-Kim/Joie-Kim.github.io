@@ -3,8 +3,7 @@ title: "ES6의 화살표 함수"
 layout: post
 date: 2020-12-14 17:30
 tag:
-    - 용어_정리
-    - JS
+- JS
 hidden: false
 star: false
 category: blog

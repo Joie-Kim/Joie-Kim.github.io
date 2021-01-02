@@ -3,7 +3,7 @@ title: "Github 레포지토리에서 폴더를 열 수 없었던 이유"
 layout: post
 date: 2020-12-27 16:00
 tag:
-    - Git
+- Git
 hidden: false
 star: false
 category: blog

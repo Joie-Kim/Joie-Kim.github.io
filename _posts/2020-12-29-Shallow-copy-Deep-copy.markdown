@@ -3,7 +3,7 @@ title: "얕은 복사(shallow copy) VS 깊은 복사(deep copy)"
 layout: post
 date: 2020-12-29 16:00
 tag:
-    - 용어 정리
+- 용어 정리
 hidden: false
 star: false
 category: blog

@@ -3,7 +3,7 @@ title: "SPA"
 layout: post
 date: 2020-12-30 20:00
 tag:
-    - 용어 정리
+- 용어 정리
 hidden: false
 star: false
 category: blog
