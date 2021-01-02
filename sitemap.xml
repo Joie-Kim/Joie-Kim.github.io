@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://joie-kim.github.io/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/about/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/blog/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/SPA/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/Shallow-copy-Deep-copy/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/Solving-Git-Issue/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/ES6-Arrow-Function/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/ES6-variable/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/Review-Team-Project/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/Express-router/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/GET-POST-PUT-PATCH/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/HTTP-Method/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/HTTP/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/Express-body-parser/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/Express-static/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/Hash-Crypto-module/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/Event-Driven-Non-blocking/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/Module-Library-Framework/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/Nodejs/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/JavaScript-engine-runtime/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joie-kim.github.io/tags/</loc>
+  <lastmod>2020-12-31T08:59:49+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
