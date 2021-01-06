@@ -3,7 +3,6 @@ title: "HTTP"
 layout: post
 date: 2020-09-23 15:30
 tag:
-- 용어_정리
 - HTTP
 hidden : false
 star: false

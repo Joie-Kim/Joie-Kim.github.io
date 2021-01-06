@@ -5,7 +5,7 @@ date: 2020-09-05 17:00
 image: /assets/200905/v8-logo.png
 headerImage: true
 tag:
-- 용어_정리
+- Etc
 hidden : false
 star: false
 category: blog

@@ -3,7 +3,8 @@ title: "SPA"
 layout: post
 date: 2020-12-30 20:00
 tag:
-- 용어 정리
+- ReactJS
+- Web
 hidden: false
 star: false
 category: blog

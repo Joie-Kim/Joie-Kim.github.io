@@ -3,7 +3,7 @@ title: "모듈 VS 라이브러리 VS 프레임워크"
 layout: post
 date: 2020-09-08 12:30
 tag:
-- 용어_정리
+- Etc
 hidden : false
 star: false
 category: blog
