@@ -5,7 +5,7 @@ date: 2021-02-06 19:00
 tag:
     - Web
 hidden: false
-star: true
+star: false
 category: blog
 author: Joie-Kim
 description: 배운 것을 기록하는 습관! ✍️
