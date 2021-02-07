@@ -39,7 +39,7 @@ description: 배운 것을 기록하는 습관! ✍️
 
 # ⚙️ 동작 방식
 
-![image](/assets/200206/Session_auth.jpeg)
+![image](/assets/210206/Session_auth.jpeg)
 
 1. 사용자가 로그인을 요청한다. ID, Password 정보가 유효하다면(DB에 저장된 값이라면), 세션을 생성하고 서버의 메모리에 저장한다. 세션 식별키인 SessionId를 기준으로 정보를 저장하며, 조회할 때도 사용된다.
 2. 서버에서 SessionId를 쿠키에 담아 사용자(웹 브라우저)에게 전달한다.

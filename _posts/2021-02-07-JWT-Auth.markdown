@@ -63,7 +63,7 @@ Access token이 만료되었을 때 재발급 받기 위한 인증 수단으로 
 
 # ⚙️ 동작 방식
 
-![image](/assets/200207/Token_auth.jpeg)
+![image](/assets/210207/Token_auth.jpeg)
 
 1. 사용자가 로그인을 요청한다. ID, Password 정보가 유효하다면(DB에 저장된 값이라면), Secret key를 사용해서 Access token, Refresh token을 발급한다.
 2. 서버에서 Access token, Refresh token을 전달한다.
@@ -73,7 +73,7 @@ Access token이 만료되었을 때 재발급 받기 위한 인증 수단으로 
 
 ### 만약 Access token이 만료되었다면?
 
-![image](/assets/200207/Token_auth2.jpeg)
+![image](/assets/210207/Token_auth2.jpeg)
 
 사용자가 미리 Access token을 decode 해서 남은 기간을 확인 하는 게 좋다. 그러면 위 그림에서 1~3번에 해당하는 과정을 거치지 않아도 돼 대기 시간이 줄어들기 때문이다.
 
