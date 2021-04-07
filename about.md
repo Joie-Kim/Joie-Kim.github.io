@@ -2,41 +2,67 @@
 title: About
 layout: page
 ---
+
 ![Profile Image](/assets/images/joie/about-image.png)
 
-<h1>Huiju Kim (Joie)</h1>
-<p>어려운 건 있어도 안 되는 건 없다는 마음가짐으로 도전을 즐기려 합니다.<br>
-직접 경험해 배우는 것을 좋아하고, 할 수 있는 일에 최선을 다하려 노력합니다.<br>
-현재 하고 싶은 것을 위해 공부하며, 차근차근 성장하는 중입니다! 🐣</p>
+# Huiju Kim (Joie)
+
+<p>어려운 건 있어도 안 되는 건 없다는 마음가짐으로 도전을 즐기려 합니다.<br> 아무것도 하지 않으면 그 자리에 머무를 수밖에 없다고 생각하기 때문에 직접 부딪히며 경험하는 것을 좋아합니다.</p>
 
 ---
 
-<h2>Profile</h2>
-<ul class="info-list">
-	<li>세종대학교 컴퓨터공학과 졸업</li>
-	<li>정보처리기사, SQLD</li>
-	<li><a href="mailto:joie.huiju@gmail.com">Contact</a></li>
-	<li><a href="https://github.com/Joie-Kim">GitHub</a></li>
+## Skills
+
+### `Frontend`
+
+<ul class="skill-list">
+	<li>TypeScript</li>
+	<li>React.js</li>
+	<li>React Native</li>
+	<li>Styled Components</li>
+	<li>CSS</li>
 </ul>
 
----
+### `Backend`
 
-<h2>Skills</h2>
 <ul class="skill-list">
+	<li>Node.js (Express)</li>
 	<li>MySQL</li>
-	<li>Python</li>
-	<li>Node.js</li>
-	<li>JavaScript</li>
-	<li>HTML</li>
-	<li>CSS</li>
+</ul>
+
+### `DevOps`
+
+<ul class="skill-list">
+	<li>AWS EC2</li>
+	<li>AWS S3</li>
+	<li>Jenkins</li>
 	<li>Git</li>
 </ul>
 
-<!--
-<h2>Projects</h2>
-<ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
+### `Language`
+
+<ul class="skill-list">
+	<li>JavaScript</li>
+	<li>Python 3</li>
 </ul>
--->
+
+### `Tools`
+
+<ul class="skill-list">
+	<li>VSCode</li>
+	<li>Terminal (Shell)</li>
+	<li>Notion, Trello</li>
+	<li>Sketch, Figma, Zeplin</li>
+</ul>
+
+---
+
+## Contact to me :)
+
+### ✉️ Email
+
+[joie.huiju@gmail.com](mailto:joie.huiju@gmail.com)
+
+### 💛 Github
+
+[https://github.com/Joie-Kim](https://github.com/Joie-Kim)
