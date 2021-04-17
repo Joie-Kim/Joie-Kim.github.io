@@ -3,13 +3,15 @@ title: "HTTP Method"
 layout: post
 date: 2020-09-24 18:00
 tag:
-- HTTP
-hidden : false
+    - HTTP
+    - Web
+hidden: false
 star: false
 category: blog
 author: Joie-Kim
 description: 배운 것을 기록하는 습관! ✍️
 ---
+
 ## HTTP 메소드?
 
 클라이언트가 **요청(request)을 한 목적**과 요청의 결과로 기대하는 바를 나타낸다.<br>(그래서 HTTP 요청 메소드라고도 한다.)<br>
@@ -18,6 +20,7 @@ description: 배운 것을 기록하는 습관! ✍️
 ---
 
 ## 메소드 속성
+
 ### (1) Safe (안전함)
 
 HTTP는 안전한 메소드(Safe Methods)라 불리는 메소드의 집합을 정의한다. 정의된 의미 체계가 본질적으로 '읽기 전용'이면 요청 메소드는 안전한 것으로 간주된다. 즉, <u>클라이언트가 안전한 메소드로 요청을 한다면, 그 결과로 서버에 어떠한 작용(상태 변화와 같은)도 하지 않는다.</u> 그 예로 GET, HEAD 메소드 등이 있다.
@@ -43,34 +46,35 @@ Idempotent?
 
 ## 종류
 
-- **GET**<br>
-요청 받은 URI의 정보를 검색하여 응답
+-   **GET**<br>
+    요청 받은 URI의 정보를 검색하여 응답
 
-- **HEAD**<br>
-GET 방식과 동일하지만, 오직 Status Code(응답 코드)와 Header 영역만을 전송 (즉, 응답 본문은 포함하지 않음)
+-   **HEAD**<br>
+    GET 방식과 동일하지만, 오직 Status Code(응답 코드)와 Header 영역만을 전송 (즉, 응답 본문은 포함하지 않음)
 
-- **POST**<br>
-요청 payload에 대한 리소스 별 처리 수행 (보통 INSERT 개념으로 사용)
-> payload : 전송되는 데이터를 의미
+-   **POST**<br>
+    요청 payload에 대한 리소스 별 처리 수행 (보통 INSERT 개념으로 사용)
 
-- **PUT**<br>
-목적 리소스의 모든 현재 표시를 요청 payload로 변경 (UPDATE 개념으로 사용)
+    > payload : 전송되는 데이터를 의미
 
-- **PATCH**<br>
-PUT과 사용 목적이 유사하지만, 일부를 변경
+-   **PUT**<br>
+    목적 리소스의 모든 현재 표시를 요청 payload로 변경 (UPDATE 개념으로 사용)
 
-- **DELETE**<br>
-목적 리소스의 모든 현재 표시를 삭제
+-   **PATCH**<br>
+    PUT과 사용 목적이 유사하지만, 일부를 변경
 
-- **CONNECT**<br>
-목적 리소스로 식별되는 서버로의 터널을 맺음
+-   **DELETE**<br>
+    목적 리소스의 모든 현재 표시를 삭제
 
-- **OPTIONS**<br>
-목적 리소스의 통신 옵션을 설명<br>
-웹 서버에서 지원되는 메소드의 종류를 확인할 경우 사용
+-   **CONNECT**<br>
+    목적 리소스로 식별되는 서버로의 터널을 맺음
 
-- **TRACE**<br>
-목적 리소스의 경로를 따라 메시지 look-back 테스트 수행
+-   **OPTIONS**<br>
+    목적 리소스의 통신 옵션을 설명<br>
+    웹 서버에서 지원되는 메소드의 종류를 확인할 경우 사용
+
+-   **TRACE**<br>
+    목적 리소스의 경로를 따라 메시지 look-back 테스트 수행
 
 ---
 

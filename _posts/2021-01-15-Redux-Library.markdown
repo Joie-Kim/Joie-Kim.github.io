@@ -3,7 +3,7 @@ title: "Redux 라이브러리 이해하기"
 layout: post
 date: 2021-01-15 18:00
 tag:
-- JS
+    - ReactJS
 hidden: false
 star: false
 category: blog
@@ -11,7 +11,7 @@ author: Joie-Kim
 description: 배운 것을 기록하는 습관! ✍️
 ---
 
-**[리액트를 다루는 기술 책]((http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791160508796&orderClick=LAG&Kc=))**의 16장을 공부하며 정리한 내용이며, ReactJS가 아닌 VanilaJS를 사용하여 리덕스를 실습한 것을 바탕으로 작성 되었다.
+**[리액트를 다루는 기술 책](<(http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791160508796&orderClick=LAG&Kc=)>)**의 16장을 공부하며 정리한 내용이며, ReactJS가 아닌 VanilaJS를 사용하여 리덕스를 실습한 것을 바탕으로 작성 되었다.
 
 > 리덕스는 리액트에서 사용하기 위해 만들어졌지만 다른 UI 라이브러리/프레임워크와 함께 사용할 수도 있다.
 
@@ -31,6 +31,7 @@ description: 배운 것을 기록하는 습관! ✍️
 
 Context API처럼 전역 상태를 관리할 때 효과적인데,
 리액트 v16.3가 릴리즈되기 이전에는 Context API 사용이 불편했기 때문에 주로 리덕스로 상태 관리를 해왔다.<br>
+
 > 최근 Context API가 개선되어 리덕스 사용이 줄어들 것이라는 글을 어디선가 봤다. 하지만 알고 사용하지 않는 것과 몰라서 사용하지 못 하는 건 다르니 사용법을 익혀두자.
 
 <br>
@@ -75,18 +76,18 @@ Context API처럼 전역 상태를 관리할 때 효과적인데,
 
 ```jsx
 // 화살표 함수
-const increase = (difference) => ({ type: 'INCREASE', difference });
-const decrease = () => ({ type: 'DECREASE' });
+const increase = (difference) => ({ type: "INCREASE", difference });
+const decrease = () => ({ type: "DECREASE" });
 
 // 기존 함수형
 function addData(data) {
-  return {
-    type: 'ADD_DATA',
-	  
-    data
-  };
-};
-d
+    return {
+        type: "ADD_DATA",
+
+        data,
+    };
+}
+d;
 ```
 
 ## 3. 리듀서
@@ -203,10 +204,10 @@ btnDecrease.onclick = () => {
 
 변화를 일으키는 리듀서 함수는 순수한 함수로 다음 조건을 만족해야 한다.
 
-- 리듀서 함수는 이전 상태와 액션 객체를 파라미터로 받는다.
-- 파라미터 외의 값에는 의존하면 안 된다.
-- 이전 상태는 절대 건드리지 않고, 변화를 준 새로운 상태 객체를 만들어서 반환한다.
-- <u>똑같은 파라미터</u>로 호출된 리듀서 함수는 언제나 <u>똑같은 결과 값</u>을 반환해야 한다.
+-   리듀서 함수는 이전 상태와 액션 객체를 파라미터로 받는다.
+-   파라미터 외의 값에는 의존하면 안 된다.
+-   이전 상태는 절대 건드리지 않고, 변화를 준 새로운 상태 객체를 만들어서 반환한다.
+-   <u>똑같은 파라미터</u>로 호출된 리듀서 함수는 언제나 <u>똑같은 결과 값</u>을 반환해야 한다.
 
 만약 리듀서 함수 내부에 랜던 값을 만들거나, Date 함수로 현재 시간을 가져오는 등의 작업을 하면 안 된다. 파라미터가 같아도 다른 결과를 만들어 낼 수 있기 때문이다.
 
