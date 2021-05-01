@@ -64,14 +64,29 @@ description: 배운 것을 기록하는 습관! ✍️
 
 ### 1. ImageSourcePropType의 정의와 메모리에 적재하는 방식
 
--   문제점
+-   **문제점**
+
     : It's meee 앱을 만들고 테스트를 하는데, 이미지가 이상하게 나타나는 이슈가 있었다. 예를 들어서, A 이미지가 나와야 할 부분인데, 완전 쌩뚱맞은 B 이미지가 나타나는 상황이었다.
--   문제 파악
-    : 서버를 두지 않고, `Async Storage`를 사용해 사용자의 기기에 이미지를 저장하고 있었다. 그래서 사용자가 저장하는 이미지(앱에서 캐릭터를 만들면 그 이미지를 스토리지에 저장함)가 무엇인지 콘솔에 로그를 찍어봤다. 번호가 출력 되었고, 스토리지에 저장될 때 숫자로 저장되고 있다는 걸 알 수 있었다.<br>
-    그래서 `Async Storage`에서 이미지를 저장하는 방식과 사용하고 있는 이미지 데이터 타입인 `ImageSourcePropType`에 대해서 찾아봤다.
--   문제 해결
-    : 찾아보고 발견한 건 다음과 같다.
-    -   `ImageSourcePropType`은
+
+-   **문제 파악**
+
+    -   서버를 두지 않고, `Async Storage`를 사용해 사용자의 기기에 이미지를 저장하고 있었다.
+    -   사용자가 저장하는 이미지(앱에서 캐릭터를 만들면 그 이미지를 스토리지에 저장함)가 무엇인지 콘솔에 로그를 찍어봤다. 번호가 출력 되었고, 스토리지에 저장될 때 숫자로 저장되고 있다는 걸 알 수 있었다.
+    -   그래서 `Async Storage`에서 이미지를 저장하는 방식과 사용하고 있는 이미지 데이터 타입인 `ImageSourcePropType`에 대해서 찾아봤다.
+    -   `ImageSourcePropType`은 부모에서 자식으로 전달할 수 있는 이미지 타입이다.
+        > Prop: 부모에서 자식으로 전달되는 것<br>
+        > PropType: 부모에서 자식으로 전달할 수 있는 타입이라는 뜻
+    -   그래서 `ImageSourcePropType`을 타입으로 하는 이미지가 메모리에 적재 되어 있어야 전달할 수 있다.
+    -   근데 이 타입의 이미지를 그대로 Async Storage에 저장할 경우, 메모리에 적재된 순서가 저장된다.
+        > (이걸 몰라서..😅) `ImageSourcePropType`을 그대로 스토리지에 저장하도록 코드를 짰고, 해당 이미지가 메모리에 적재된 순서가 숫자로 저장됐다. 즉, 콘솔에 찍힌 숫자는 이거였다.<br>
+        > 그래서 앱을 재실행하는 것과 같이 메모리에 다시 적재 되어 순서가 바뀌면 이미지가 바뀌게 되었다.<br><br>
+        > 예를 들어, 메모리에 `A → B → C` 순서로 적재가 되었는데 지금 방식으로 저장을 하면 스토리지에 `1, 2, 3`이 저장된다. 재실행해서 `B → C → A` 순서로 적재되고 스토리지에서 이미지를 불러오면, <u>A(스토리지에 1로 저장)</u>가 호출되어야 할 곳에 <u>B(지금 적재된 순서가 1)</u>가 호출되는 상황이 된다.
+
+-   **문제 해결**
+
+    -   lib 폴더에 StaticImage.tsx 파일을 만들고, 모든 이미지 소스를 불러왔다. 이때, 카테고리별로 배열을 만들어 불러왔다.
+        > 캐릭터를 만들 때 사용되는 이미지들이었기 때문에 카테고리가 나눠져 있었다. 예를 들어, 눈에 이미지 10개 이런 식으로!
+    -   그리고 이 파일에서 이미지 배열을 불러와 코드에서 사용하고, 사용자가 선택한 특정 이미지의 배열 내 인덱스를 스토리지에 저장했다. 그리고 이미지를 보여주는 곳에서 스토리지에 저장된 숫자와 일치하는 인덱스를 가진 이미지를 사용했다.
 
 ### 2. App store에 유료앱을 배포하기 위해서는 사업자 등록증이 필요하다.
 
@@ -89,10 +104,11 @@ Google play store에는 사업자 등록증 없이 배포가 됐는데, App stor
 ![image](/assets/210501/gists.png)
 
 (2) 알고리즘 개념들을 다시 한 번 정리하고(헷갈리는 게 있어서), 자바스크립트로 구현해봤다.
-[DFS, BFS](https://github.com/Joie-Kim/Algorithm/blob/master/Jote-down-note/DFS-BFS.md)
-[Dynamic programming](https://github.com/Joie-Kim/Algorithm/blob/master/Jote-down-note/DynamicProgramming.md)
-[Graph](https://github.com/Joie-Kim/Algorithm/blob/master/Jote-down-note/Graph.md)
-[Lower bound](https://github.com/Joie-Kim/Algorithm/blob/master/Jote-down-note/LowerBound-UpperBound.md)
+
+-   [DFS, BFS](https://github.com/Joie-Kim/Algorithm/blob/master/Jote-down-note/DFS-BFS.md)
+-   [Dynamic programming](https://github.com/Joie-Kim/Algorithm/blob/master/Jote-down-note/DynamicProgramming.md)
+-   [Graph](https://github.com/Joie-Kim/Algorithm/blob/master/Jote-down-note/Graph.md)
+-   [Lower bound](https://github.com/Joie-Kim/Algorithm/blob/master/Jote-down-note/LowerBound-UpperBound.md)
 
 <br>
 
