@@ -3,7 +3,7 @@ title: "Callback VS Promise VS async/await"
 layout: post
 date: 2021-01-02 22:00
 tag:
-- JS
+    - JS
 hidden: false
 star: false
 category: blog
@@ -30,16 +30,21 @@ JavaScript를 사용 하면서 꼭꼭꼭! 알아야 하고, 잘 사용해야 하
 이때 만약 작업을 동기적으로 처리한다면 데이터를 요청하고 기다리는 동안 작업이 중지되어 다른 작업들을 할 수 없다.<br>
 하지만 이를 비동기적으로 처리하면 웹이 멈추지 않고, 동시에 여러 가지 요청을 처리하거나 응답을 기다리는 동안 다른 함수를 호출할 수 있다.<br>
 
-## 이럴 때 비동기적으로 처리 하자
-- 서버 API를 호출할 때
-- DB 호출할 때
-- setTimeout 함수를 사용할 때
-> setTimeout 함수는 특정 작업을 예약할 때 사용한다. (즉, 일정 시간 이후에 동작 하도록 한다.)
+## 이럴 땐 동기적으로 하고 싶다.
+
+하지만 데이터를 아직 서버로부터 받아오지 않았는데, 결과를 사용자에게 보여주거나 함수 처리를 해 곤란한 경우도 있다. 그럴 땐 동기적으로 처리(데이터를 받아올 때까지 기다려줘..😹) 하는 것이 필요하다.
+
+-   서버 API를 호출할 때
+-   DB 호출할 때
+-   setTimeout 함수를 사용할 때
+    > setTimeout 함수는 특정 작업을 예약할 때 사용한다. (즉, 일정 시간 이후에 동작 하도록 한다.)
 
 <br>
 
 # 👆 콜백 함수
+
 아래와 같이 파라미터 값이 주어지면 1초 뒤에 10을 더해서 반환하는 함수가 있다고 가정해 보자.
+
 ```jsx
 function increase(number, callback) {
     setTimeout(() => {
@@ -50,13 +55,14 @@ function increase(number, callback) {
     }, 1000);
 }
 
-increase(0, result => {
+increase(0, (result) => {
     console.log(result);
 });
 ```
 
 10, 20, 30, 40과 같은 형태로 여러 번 순차적으로 처리하고 싶다면 콜백 함수를 중첩하여 구현할 수 있다.<br>
 하지만 아래처럼 너무 여러 번 중첩될 경우 코드의 가독성이 나빠진다. 이런 형태를 흔히 **콜백 지옥**이라 한다. (지양하는 편이 좋다.)
+
 ```jsx
 function increase(number, callback) {
     setTimeout(() => {
@@ -67,16 +73,16 @@ function increase(number, callback) {
     }, 1000);
 }
 
-console.log('start..');
-increase(0, result => {
-    console.log(result);  // 10
-    increase(result, result => {
-        console.log(result);   // 20
-        increase(result, result => {
-            console.log(result);  // 30
-            increase(result, result => {
-                console.log(result);  // 40
-                console.log('end..');
+console.log("start..");
+increase(0, (result) => {
+    console.log(result); // 10
+    increase(result, (result) => {
+        console.log(result); // 20
+        increase(result, (result) => {
+            console.log(result); // 30
+            increase(result, (result) => {
+                console.log(result); // 40
+                console.log("end..");
             });
         });
     });
@@ -86,25 +92,30 @@ increase(0, result => {
 <br>
 
 # 🤘 Promise
+
 Promise는 콜백 지옥을 해결하기 위한 방안으로 ES6에 도입된 기능이다.<br>
 Promise 내부에 코드를 작성해 코드가 정상적으로 작동한다면 `resolve`, 비정상적으로 작동한다면 `reject`를 지정할 수 있다.<br>
 또한, 해당 Promise를 할당 받은 변수에서 `.then()`, `.catch()`, `.finally()` 등으로 결과 값을 처리할 수 있다.
 
 ## Promise의 상태
+
 Promise는 다음 중 하나의 상태를 가진다.
-- **pending**: 초기 상태
-- **fullfilled**: 연산이 성공적으로 완료된 상태
-- **rejected**: 연산이 실패한 상태
-> Promise는 대기 중이지 않으며, fullfilled 또는 rejected 됐을 때 처리(settled)됐다고 말한다.
+
+-   **pending**: 초기 상태
+-   **fullfilled**: 연산이 성공적으로 완료된 상태
+-   **rejected**: 연산이 실패한 상태
+    > Promise는 대기 중이지 않으며, fullfilled 또는 rejected 됐을 때 처리(settled)됐다고 말한다.
 
 ## Promise의 Prototype
-- **Promise.prototype.then()** : Promise에서 resolve된 value를 처리한다.
-- **Promise.prototype.catch()** : Promise에서 reject된 error를 처리한다.
-- **Promise.prototype.finally()** : Promise에서 resolve인지 reject인지 상관없이 동작한다
+
+-   **Promise.prototype.then()** : Promise에서 resolve된 value를 처리한다.
+-   **Promise.prototype.catch()** : Promise에서 reject된 error를 처리한다.
+-   **Promise.prototype.finally()** : Promise에서 resolve인지 reject인지 상관없이 동작한다
 
 <br>
 
 위에서 콜백으로 구현한 코드를 Promise를 사용해 바꾸면 다음과 같다.
+
 ```jsx
 function increase(number) {
     const promise = new Promise((resolve, reject) => {
@@ -112,7 +123,7 @@ function increase(number) {
         setTimeout(() => {
             const result = number + 10;
             if (result > 50) {
-                const e = new Error('Number is too big');
+                const e = new Error("Number is too big");
                 return reject(e);
             }
             resolve(result);
@@ -122,34 +133,36 @@ function increase(number) {
 }
 
 increase(0)
-    .then(number => {
+    .then((number) => {
         // Promise에서 resolve된 값은 .then을 통해 받아 올 수 있음
-        console.log(number);        // 10
-        return increase(number);    // Promise를 리턴하면
+        console.log(number); // 10
+        return increase(number); // Promise를 리턴하면
     })
-    .then(number => {
+    .then((number) => {
         // 또 .then으로 처리 가능
-        console.log(number);        // 20
+        console.log(number); // 20
         return increase(number);
     })
-    .then(number => {
-        console.log(number);        // 30
+    .then((number) => {
+        console.log(number); // 30
         return increase(number);
     })
-    .then(number => {
-        console.log(number);        // 40
+    .then((number) => {
+        console.log(number); // 40
         return increase(number);
     })
-    .then(number => {
+    .then((number) => {
         console.log(number);
         return increase(number);
     })
-    .catch(e => {
+    .catch((e) => {
         // 도중에 에러가 발생한다면 .catch를 통해 알 수 있음
         console.log(e);
     });
 ```
+
 ## Promise를 사용할 때 주의할 점
+
 Promise를 사용하며 주의해야할 점은 Promise가 생성되자마자 Promise 내부 코드가 실행된다는 점이다.<br>
 위의 코드에서 Promise의 내부 코드는 increase.then(...) 부분에 실행되는 것이 아니고 `new Promise(...)` 부분에서 바로 실행된다.<br>
 increase.then(...) 부분에서는 그저 **Promise의 내부 코드가 동작한 결과**만을 가지고 있을 뿐이다.(`resolve`, `reject`와 같은)<br>
@@ -158,26 +171,28 @@ increase.then(...) 부분에서는 그저 **Promise의 내부 코드가 동작�
 <br>
 
 # 🤟 async/await
+
 async/await는 Promise를 더욱 쉽게 사용할 수 있도록 해 주는 ES2017(ES8) 문법이다.<br>
 이 문법을 사용하려면 함수의 앞부분에 async 키워드를 추가하고, 해당 함수 내부에서 Promise의 앞부분에 await 키워드를 사용한다.<br>
 이렇게 하면 Promise가 끝날 때까지 기다리고, 결과 값을 특정 변수에 담을 수 있다.
+
 ```jsx
 function increase(number) {
     const promise = new Promise((resolve, reject) => {
         // ... 위 코드와 동일 ...
-    })
+    });
 }
 
 async function runTasks() {
     try {
         let result = await increase(0);
-        console.log(result);                // 10
+        console.log(result); // 10
         result = await increase(result);
-        console.log(result);                // 20
+        console.log(result); // 20
         result = await increase(result);
-        console.log(result);                // 30
+        console.log(result); // 30
         result = await increase(result);
-        console.log(result);                // 40
+        console.log(result); // 40
         result = await increase(result);
         console.log(result);
     } catch (e) {
